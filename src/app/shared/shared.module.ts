@@ -3,21 +3,28 @@ import { CommonModule } from '@angular/common';
 import { ConnectMenuComponent } from './components/connect-menu/connect-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { MusicbarComponent } from './components/musicbar/musicbar.component';
+import { SigninformComponent } from './components/signinform/signinform.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
 @NgModule({
   declarations: [
     ConnectMenuComponent,
-    FooterComponent
+    FooterComponent,
+    MusicbarComponent,
+    SigninformComponent
   ],
   imports: [
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   exports: [
     ConnectMenuComponent,
     FooterComponent,
+    SigninformComponent,
     AppRoutingModule,
     CommonModule
   ]
