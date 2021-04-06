@@ -1,7 +1,11 @@
 
 .position {
   position: absolute;
-  bottom: 2vh;
+  width: 100%;
+  display: flex;
+  justify-content: center; // Centers the item
+  align-items: center;
+  bottom: 10px; // Moves it up a little from the bottom
 }
   
 button {
@@ -15,11 +19,24 @@ button {
 }
 .time{
   margin-left: 1vw;
+  
 }
 .slider{
-  width: 70vw;
   margin-left: 1vw;
+  width: 50vw;
 }
+
 .song-name{
-  width: 1vw;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -5px;
+  .artist{
+    font-size: 15px;
+    margin-bottom: -3px;
+  }
+  .song{
+    font-size: 10px;
+  }
 }
