@@ -1,19 +1,32 @@
-
-.container-slider{
-    display: flex;
-    justify-content: center; // Centers the item
-    align-items: center;
-    margin-top: 5vh;
-    flex-direction: column;
-
-    .title{
-        align-self: flex-start;
-        margin-left: 15vw;
-        margin-bottom: 1vh;
-        font-size: 20px;
+.scrolling-wrapper {
+    margin-right: 8vh;
+    margin-left: 8vh;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
     }
-
-    .carousel{
-        width: 70vw;
-    }
+  }
+.arrow_back{
+    transform: translateY(5vh);
 }
+.arrow_forward {
+    transform: translateY(-5vh);
+    float: right;
+}
+
+  @media only screen and (max-width: 600px) {
+    .arrow_back{
+        width: 70vh;
+        display: none;
+    }
+    .arrow_forward{
+      display: none;
+    }
+  }
