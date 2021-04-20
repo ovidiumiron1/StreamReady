@@ -7,6 +7,12 @@ import { Component, OnInit} from '@angular/core';
 })
 export class MusicbarComponent implements OnInit {
 
+  public changeHeart:any;
+
+  public changeVolume:any;
+
+  public changePlayIcon:any;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,15 +1,22 @@
 <div id="audio-player-container" class="position">
     <button id="step-backward"><i class="fas fa-step-backward"></i></button>
-    <button id="play-icon"><i class="fas fa-play"></i></button>
+    <button (click)="changePlayIcon=!changePlayIcon"id="play-icon">
+      <i class="fas fa-play" *ngIf="changePlayIcon"></i>
+      <i class="fas fa-pause" *ngIf="!changePlayIcon"></i>
+    </button>
     <button id="step-forward"><i class="fas fa-step-forward"></i></button>
     <button id="repeat"><i class="fas fa-redo"></i></button>
     <span id="current-time" class="time">0:00</span>
     <input type="range" id="seek-slider" class="slider" max="100" value="0">
     <span id="current-time" class="time">0:00</span>
-    <button id="volume"><i class="fas fa-volume-up"></i></button>
-    <!-- <button id="volume-muted"><i class="fas fa-volume-mute"></i></button> -->
-    <button id="heart"><i class="far fa-heart"></i></button>
-    <!-- <button id="heart-pressed"><i class="fas fa-heart"></i></button> -->
+    <button (click)="changeVolume=!changeVolume" id="volume">
+      <i class="fas fa-volume-up" *ngIf="!changeVolume"></i>
+      <i class="fas fa-volume-mute" *ngIf="changeVolume"></i>
+    </button>
+    <button (click)="changeHeart=!changeHeart" id="heart">
+      <i class="far fa-heart" *ngIf="!changeHeart"></i>
+      <i class="fas fa-heart" *ngIf="changeHeart"></i>
+    </button>
     <div class="song-name">
       <span id="artist" class="artist">Artist</span>
       <span id="song" class="song">Song name</span>

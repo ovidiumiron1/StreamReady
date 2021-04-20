@@ -1,0 +1,19 @@
+
+.container-slider{
+    display: flex;
+    justify-content: center; // Centers the item
+    align-items: center;
+    margin-top: 5vh;
+    flex-direction: column;
+
+    .title{
+        align-self: flex-start;
+        margin-left: 15vw;
+        margin-bottom: 1vh;
+        font-size: 20px;
+    }
+
+    .carousel{
+        width: 70vw;
+    }
+}

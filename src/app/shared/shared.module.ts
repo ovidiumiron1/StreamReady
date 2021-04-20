@@ -6,7 +6,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MusicbarComponent } from './components/musicbar/musicbar.component';
 import { SigninformComponent } from './components/signinform/signinform.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { SliderComponent } from './components/slider/slider.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 
 @NgModule({
@@ -14,9 +15,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ConnectMenuComponent,
     FooterComponent,
     MusicbarComponent,
-    SigninformComponent
+    SigninformComponent,
+    SliderComponent
   ],
   imports: [
+    IvyCarouselModule,
     AppRoutingModule,
     CommonModule,
     NgbModule
@@ -26,6 +29,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     SigninformComponent,
     MusicbarComponent,
+    SliderComponent,
+    IvyCarouselModule,
     AppRoutingModule,
     CommonModule
   ]

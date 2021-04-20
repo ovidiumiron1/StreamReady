@@ -1,4 +1,6 @@
-<ng-template #content let-modal>
+<div class="pop-up">
+  <ng-template #content let-modal>
+  
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">Sign Up</h4>
       <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -28,7 +30,7 @@
       <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click');" routerLink = "page2">Register</button>
     </div>
   </ng-template>
-  
+</div>
   <button class="button" (click)="open(content)">Sign up for free</button>
   
   <!-- <pre>{{ closeResult }}</pre> -->

@@ -26,6 +26,7 @@ form.example::after {
     clear: both;
     display: table;
 }
+
 .searchbar {
     margin-top: 5vh;
     display: flex;
@@ -54,4 +55,8 @@ form.example::after {
 }
 h4 {
     margin: 30px;
+}
+
+.slider {
+    margin-bottom: 5vh;
 }

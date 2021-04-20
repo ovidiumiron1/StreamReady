@@ -1,11 +1,12 @@
 
 .position {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center; // Centers the item
   align-items: center;
   bottom: 10px; // Moves it up a little from the bottom
+  
 }
   
 button {
