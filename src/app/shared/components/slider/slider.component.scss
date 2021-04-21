@@ -1,4 +1,5 @@
 .scrolling-wrapper {
+  margin-top: 5px;
     margin-right: 8vh;
     margin-left: 8vh;
     -webkit-overflow-scrolling: touch;
@@ -13,13 +14,15 @@
       display: inline-block;
     }
   }
-.arrow_back{
-    transform: translateY(5vh);
-}
-.arrow_forward {
-    transform: translateY(-5vh);
+.arrows{
+  transform: translateY(-7vh);
+  .arrow_back{
+  }
+  .arrow_forward {
     float: right;
 }
+}
+
 
   @media only screen and (max-width: 600px) {
     .arrow_back{
