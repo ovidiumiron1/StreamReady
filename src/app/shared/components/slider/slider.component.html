@@ -1,19 +1,19 @@
 <div class="container-slider">
     <span class="title">Recommended</span>
-    
-    <div class="scrolling-wrapper">
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-        <div class="card"><h2>Card</h2></div>
-    </div>
+    <div class="list" appScrollable #list="appScrollable" [scrollUnit]="550">
+		<div *ngFor="let i of items" class="card" >
+            <img src="https://thumbs.dreamstime.com/b/music-logo-189304285.jpg" alt="">
+            <h2>Albert NBN</h2>
+            <h3>{{i}}</h3>
+        </div>
+	</div>
+
     <div class="arrows">
-        <i class="arrow_back fas fa-chevron-left fa-3x"></i>
-        <i class="arrow_forward fas fa-chevron-right fa-3x"></i>
+        <button class="arrow_back" *ngIf="list.isOverflow" [class.disable]="!list.canScrollStart" 
+        (click)="list.scroll(-1)" id="scroll-left"><i class="fas fa-chevron-left fa-3x"></i></button>
+
+        <button class="arrow_forward" *ngIf="list.isOverflow"  [class.disable]="!list.canScrollEnd" 
+        (click)="list.scroll(1)"><i class="fas fa-chevron-right fa-3x"></i></button>
     </div>
+    
 </div>

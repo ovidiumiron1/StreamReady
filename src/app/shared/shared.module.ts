@@ -8,6 +8,7 @@ import { SigninformComponent } from './components/signinform/signinform.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './components/slider/slider.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ScrollableDirective } from './components/slider/scrollable.directive';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { MenuComponent } from './components/menu/menu.component';
     MusicbarComponent,
     SigninformComponent,
     SliderComponent,
+    ScrollableDirective,
     MenuComponent
   ],
   imports: [
@@ -32,6 +34,7 @@ import { MenuComponent } from './components/menu/menu.component';
     SliderComponent,
     MenuComponent,
     AppRoutingModule,
+    ScrollableDirective,
     CommonModule
   ]
 })
