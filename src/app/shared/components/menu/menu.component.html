@@ -1,15 +1,15 @@
 <nav class="topnav">
   <img class="logo-img" title="logo" src="https://i.imgur.com/jPlLVs7.png">
     <ul class="interior-nav">
-      <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
-      <li><a href="#"><i class="fas fa-stream"></i> Stream</a></li>
-      <li><a href="#"><i class="fas fa-book-open"></i> Library</a></li>
+      <li><a href="music-page"><i class="fa fa-fw fa-home"></i> Home</a></li>
+      <li><a href="stream-page"><i class="fas fa-stream"></i> Stream</a></li>
+      <li><a href="library-page"><i class="fas fa-book-open"></i> Library</a></li>
       <li class="search-container">
           <form action="/action_page.php">
               <input class="search__input" type="text" placeholder="Search">
           </form>
       </li>
-      <li><a href="#"><i class="fa fa-fw fa-user"></i> User</a></li>
+      <li><app-user-dialogbox></app-user-dialogbox></li>
       <li><a href="#"><i class="fas fa-upload"></i> Upload</a></li>
       <li class="dropdown"><a href="#"> </a></li>
       <ul id="main">
@@ -17,11 +17,10 @@
           <i class="fas fa-bars fa-2x hamburger"></i>
           <ul class="drop">
             <div>
-              <li onclick="location.href='#'"><i class="fas fa-user"></i>   Profile</li>
+              <li onclick="location.href='playlist-page'"><i class="fas fa-user"></i>   Playlists</li>
               <li onclick="location.href='#'"><i class="fas fa-heart"></i>   Likes</li>
-              <li onclick="location.href='#'"><i class="fas fa-music"></i>   Playlists</li>
               <li onclick="location.href='#'"><i class="fas fa-share"></i>   Share</li>
-              <li onclick="location.href='#'"><i class="fas fa-cog"></i>   Settings</li>
+              <li onclick="location.href='settings-page'"><i class="fas fa-cog"></i>   Settings</li>
               <li onclick="location.href='#'"><i class="fas fa-sign-out-alt"></i>   Logout</li>
             </div>
           </ul>

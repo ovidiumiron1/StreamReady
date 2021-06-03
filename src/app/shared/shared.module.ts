@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './components/slider/slider.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ScrollableDirective } from './components/slider/scrollable.directive';
+import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogbox.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ScrollableDirective } from './components/slider/scrollable.directive';
     SigninformComponent,
     SliderComponent,
     ScrollableDirective,
-    MenuComponent
+    MenuComponent,
+    UserDialogboxComponent
   ],
   imports: [
     AppRoutingModule,
@@ -33,6 +35,7 @@ import { ScrollableDirective } from './components/slider/scrollable.directive';
     MusicbarComponent,
     SliderComponent,
     MenuComponent,
+    UserDialogboxComponent,
     AppRoutingModule,
     ScrollableDirective,
     CommonModule
