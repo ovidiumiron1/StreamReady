@@ -16,4 +16,25 @@ a:hover {
     color: #555;
     cursor: pointer;
   }
-  
+.image {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin-right: 30px;
+}
+.label {
+  margin-right: 15px;
+}
+.label_text {
+  display: flex;
+  size: 20px;
+
+  .it1 {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .it2 {
+    font-size: 20px;
+  }
+
+}

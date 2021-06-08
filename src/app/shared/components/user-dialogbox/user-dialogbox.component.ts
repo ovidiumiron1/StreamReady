@@ -9,6 +9,11 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class UserDialogboxComponent implements OnInit {
   closeResult = '';
+  username = 'Ovidiu';
+  minutesPlayed = '3250';
+  followers = '1770';
+  following = '930';
+  likedTracks = '321';
 
   constructor(private modalService: NgbModal, private router: Router) {}
 

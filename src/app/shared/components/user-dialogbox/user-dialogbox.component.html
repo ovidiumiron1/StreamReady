@@ -2,13 +2,41 @@
     <ng-template #content let-modal>
     
       <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Your Profile</h4>
+        <h4 class="modal-title" id="modal-basic-title">Hello, {{username}}</h4>
         <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
           <span aria-hidden="true">&times;</span>
         </button>
+     
       </div>
       <div class="modal-body">
+        <img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" alt="" class="image">
+
+        <form action="/action_page.php">
+          <label class="label" for="fname">Name:</label>
+          <input class="label" type="text" id="fname" name="fname"><i class="fas fa-pen"></i><br><br>
+          <label class="label" for="lname">Email:</label>
+          <input class="label" type="text" id="lname" name="lname"><i class="fas fa-pen"></i><br><br>
+        </form>
         
+        <div class="label_text">
+          <h6 class="it1">Minutes Played:</h6>
+          <h6 class="it2">{{minutesPlayed}}</h6>
+        </div>
+
+        <div class="label_text">
+          <h6 class="it1">Followers:</h6>
+          <h6 class="it2">{{followers}}</h6>
+        </div>
+
+        <div class="label_text">
+          <h6 class="it1">Following:</h6>
+          <h6 class="it2">{{following}}</h6>
+        </div>
+
+        <div class="label_text">
+          <h6 class="it1">Liked Tracks:</h6>
+          <h6 class="it2">{{likedTracks}}</h6>
+        </div>
       </div>
       <div class="modal-footer">
         <!-- <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click');" routerLink = "music-page">Register</button> -->
@@ -17,6 +45,7 @@
   </div>
 
   <!-- The button visible on the page -->
+  
   <a class="button" (click)="open(content)"><i class="fa fa-fw fa-user"></i>User</a>
     
     <!-- <pre>{{ closeResult }}</pre> -->

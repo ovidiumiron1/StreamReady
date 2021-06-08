@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
-  position: absolute;
+  position: relative;
     // left: 0;
     // bottom: 0;
   height: 50px;
@@ -8,6 +8,7 @@
   overflow: hidden;
   //flex: 0 0 50px;/*or just height:50px;*/
   margin-top: auto;
+  margin-bottom: 0px;
 }
 .copyright{
     color: white;
