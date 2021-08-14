@@ -1,3 +1,9 @@
+
+.modal-body {
+  height: 300px;
+  background-image: url("/assets/images/user_profile_background.png");
+}
+
 a {
     display: block;
     padding: 20px;
@@ -17,24 +23,32 @@ a:hover {
     cursor: pointer;
   }
 .image {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   float: right;
   margin-right: 30px;
+  margin-top: 50px;
+  background-color:#fff;
+  border:2px solid #fff;    
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
 }
-.label {
-  margin-right: 15px;
-}
-.label_text {
-  display: flex;
-  size: 20px;
 
+.modal-footer {
+height: 100px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.label {
+  text-align: center;
   .it1 {
-    margin-right: 10px;
-    font-size: 20px;
+    color: #555;
   }
   .it2 {
     font-size: 20px;
   }
-
 }
