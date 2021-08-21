@@ -10,6 +10,8 @@ import { StreamPageComponent } from './pages/stream-page/stream-page.component';
 import { LibraryPageComponent } from './pages/library-page/library-page.component';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
 import { PlaylistPageComponent } from './pages/playlist-page/playlist-page.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { PlaylistPageComponent } from './pages/playlist-page/playlist-page.compo
   imports: [
     BrowserModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    NgxDropzoneModule
   ],
   exports: [],
   providers: [],

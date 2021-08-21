@@ -11,6 +11,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ScrollableDirective } from './components/slider/scrollable.directive';
 import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogbox.component';
 import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-dialogbox.component';
+import { DropBoxComponent } from './components/upload-dialogbox/drop-box/drop-box.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 
 @NgModule({
@@ -23,12 +25,14 @@ import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-d
     ScrollableDirective,
     MenuComponent,
     UserDialogboxComponent,
-    UploadDialogboxComponent
+    UploadDialogboxComponent,
+    DropBoxComponent
   ],
   imports: [
     AppRoutingModule,
     CommonModule,
-    NgbModule
+    NgbModule,
+    NgxDropzoneModule
   ],
   exports: [
     ConnectMenuComponent,
@@ -39,6 +43,7 @@ import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-d
     MenuComponent,
     UserDialogboxComponent,
     UploadDialogboxComponent,
+    DropBoxComponent,
     AppRoutingModule,
     ScrollableDirective,
     CommonModule

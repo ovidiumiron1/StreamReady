@@ -24,6 +24,7 @@
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
+    "ngx-dropzone": "^3.0.0",
     "rxjs": "~6.6.0",
     "swiper": "^6.5.0",
     "tslib": "^2.0.0",
