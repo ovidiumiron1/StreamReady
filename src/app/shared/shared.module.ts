@@ -10,6 +10,8 @@ import { SliderComponent } from './components/slider/slider.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ScrollableDirective } from './components/slider/scrollable.directive';
 import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogbox.component';
+import { LibraryMenuComponent } from '../pages/library-page/library-menu/library-menu.component';
+import { LibraryMenuBoxComponent } from '../pages/library-page/library-menu/library-menu-box/library-menu-box.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogb
     SliderComponent,
     ScrollableDirective,
     MenuComponent,
-    UserDialogboxComponent
+    UserDialogboxComponent,
+    LibraryMenuComponent,
+    LibraryMenuBoxComponent
   ],
   imports: [
     AppRoutingModule,
@@ -36,6 +40,8 @@ import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogb
     SliderComponent,
     MenuComponent,
     UserDialogboxComponent,
+    LibraryMenuComponent,
+    LibraryMenuBoxComponent,
     AppRoutingModule,
     ScrollableDirective,
     CommonModule
