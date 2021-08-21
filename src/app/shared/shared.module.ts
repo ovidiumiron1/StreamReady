@@ -13,6 +13,7 @@ import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogb
 import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-dialogbox.component';
 import { DropBoxComponent } from './components/upload-dialogbox/drop-box/drop-box.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
+import { TextFieldsComponent } from './components/upload-dialogbox/text-fields/text-fields.component';
 
 
 @NgModule({
@@ -26,8 +27,9 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
     MenuComponent,
     UserDialogboxComponent,
     UploadDialogboxComponent,
-    DropBoxComponent
-  ],
+    DropBoxComponent,
+    TextFieldsComponent
+    ],
   imports: [
     AppRoutingModule,
     CommonModule,
@@ -44,6 +46,7 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
     UserDialogboxComponent,
     UploadDialogboxComponent,
     DropBoxComponent,
+    TextFieldsComponent,
     AppRoutingModule,
     ScrollableDirective,
     CommonModule

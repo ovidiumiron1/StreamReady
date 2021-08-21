@@ -7,6 +7,9 @@ a {
     text-transform: uppercase;
     margin: 0 10px;
   }
+img{
+margin-top: 20px;
+  }
 a,
 a:after,
 a:before {
@@ -41,3 +44,11 @@ margin: 4px 2px;
 cursor: pointer;
 }
 .select_computer{border-radius: 12px;}
+.select_computer:hover {
+  background-color:  #0b7dda;}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
