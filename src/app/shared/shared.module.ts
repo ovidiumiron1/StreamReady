@@ -11,6 +11,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ScrollableDirective } from './components/slider/scrollable.directive';
 import { UserDialogboxComponent } from './components/user-dialogbox/user-dialogbox.component';
 import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-dialogbox.component';
+import { TextFieldsComponent } from './components/upload-dialogbox/text-fields/text-fields.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-d
     ScrollableDirective,
     MenuComponent,
     UserDialogboxComponent,
-    UploadDialogboxComponent
+    UploadDialogboxComponent,
+    TextFieldsComponent
   ],
   imports: [
     AppRoutingModule,
@@ -39,6 +41,7 @@ import { UploadDialogboxComponent } from './components/upload-dialogbox/upload-d
     MenuComponent,
     UserDialogboxComponent,
     UploadDialogboxComponent,
+    TextFieldsComponent,
     AppRoutingModule,
     ScrollableDirective,
     CommonModule
